@@ -9,4 +9,4 @@ run_worker_first = ["/api/*"]
 [[d1_databases]]
 binding = "DB"
 database_name = "fantafamily-2026"
-database_id = "REPLACE_AFTER_CREATION"
+database_id = "9f37c699-1b31-4e4b-9be2-64d760801e2a  "
