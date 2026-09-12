@@ -1,0 +1,12 @@
+name = "fantafamily-2026"
+main = "src/index.js"
+compatibility_date = "2026-09-12"
+
+[assets]
+directory = "./public"
+run_worker_first = ["/api/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fantafamily-2026"
+database_id = "REPLACE_AFTER_CREATION"
