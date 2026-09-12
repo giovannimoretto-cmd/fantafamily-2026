@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FantaFamily 2026/27</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><h1>⚽ FantaFamily</h1><p>Gio · Pietro · Gabri</p></div><div id="matchday"></div></header>
+<main>
+<section class="card live"><div><strong>LIVE</strong><span id="liveStatus"> Caricamento...</span></div><div id="lockedTeams"></div></section>
+<section class="tabs"><button class="tab active" data-tab="formation">Formazione</button><button class="tab" data-tab="ranking">Classifica</button><button class="tab" data-tab="rules">Regole</button></section>
+<section id="formation" class="panel active">
+  <div class="coachRow"><label>Allenatore <select id="coach"><option>Gio</option><option>Pietro</option><option>Gabri</option></select></label><label>Modulo <select id="formationSelect"><option>3-4-3</option><option>3-5-2</option><option>4-3-3</option><option>4-4-2</option><option>4-5-1</option><option>5-3-2</option><option>5-4-1</option></select></label></div>
+  <div class="pitch" id="pitch"></div>
+  <div class="playerPicker"><div class="pickerHead"><h2>Giocatori</h2><input id="search" placeholder="Cerca giocatore..."></div><div id="players"></div></div>
+  <button class="primary" id="save">Salva formazione</button><div id="saveMessage"></div>
+</section>
+<section id="ranking" class="panel"><div class="card"><h2>Classifica generale</h2><div id="rankingTable"></div></div><div class="card"><h2>Ultima giornata</h2><div id="dayScores"></div></div></section>
+<section id="rules" class="panel"><div class="card"><h2>Regole</h2><ul><li>Ogni giornata si riparte da zero.</li><li>Nessun budget.</li><li>11 titolari + 7 panchinari.</li><li>Una squadra si blocca quando la sua partita è iniziata.</li><li>Porta inviolata: +1 solo al portiere.</li><li>Classifica giornata: 3 / 2 / 1 punti.</li><li>Parità: vince il fantapunteggio più alto.</li></ul></div></section>
+</main>
+<script src="app.js"></script>
+</body></html>
